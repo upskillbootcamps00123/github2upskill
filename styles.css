@@ -1,0 +1,36 @@
+.container{
+   display: grid;
+   grid-template: repeat(4,200px) / repeat(3,300px);
+   gap: 12px;
+
+   grid-template-areas: 
+   "header header header"
+   "sidebar main main"
+   "footer footer footer"
+   ;
+}
+
+.box{
+   padding: 12px;
+   color:white;
+   background-color: gold;
+}
+
+
+.box1{
+   grid-area: header;
+}
+
+.box2{
+   grid-area: sidebar;
+}
+
+.box3{
+   grid-area: main;
+}
+
+.footer {
+   grid-area: footer;
+   background-color: tomato;
+}
+
